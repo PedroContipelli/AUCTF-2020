@@ -1,0 +1,28 @@
+Lining up the numbers of the sequence with their indices gives you:
+
+Index:    |0| |1| |2| |3| |4| |5| |6| |7 | |8| |9| |10|
+Sequence: |0| |1| |1| |2| |4| |8| |6| |22| |8| |9| |10| __, __, __, __, __
+
+You may notice that the number in the sequence is equal to the index multiple times.
+The title is "Prime Rib" so look for a pattern with that, and this only happens when
+the index is NOT a prime number.
+
+And for prime indices? Look for another common pattern, and notice that they are the
+sum of the rest of the sequence up until that point (somewhat like fibonacci).
+
+a_n = n                  [if n is composite]
+a_n = sum(a_0 ... a_n-1) [if n is prime]
+
+Complete the sequence using the rules above.
+
+Index:    |0| |1| |2| |3| |4| |5| |6| |7 | |8| |9| |10| |11| |12| |13 | |14| |15|
+Sequence: |0| |1| |1| |2| |4| |8| |6| |22| |8| |9| |10| |71| |12| |154| |14| |15|
+
+Flag is the last 5 numbers: 71, 12, 154, 14, 15
+
+
+
+
+
+
+
